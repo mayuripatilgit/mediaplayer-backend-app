@@ -35,7 +35,7 @@ tasks.named('test') {
 }
 
 String imageName = "${project.group}/${project.name}"
-docker {
+/*docker {
 	dockerfile file('Dockerfile')
 	dependsOn(tasks.findByPath("build"))
 	name imageName
@@ -49,4 +49,4 @@ dockerRun {
 	env 'SPRING_PROFILES_ACTIVE': 'dev'
 	daemonize true
 	clean false
-}
+}*/
